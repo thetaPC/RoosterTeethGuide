@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,11 +27,6 @@
 </head>
 
 <body>
-<?php
-
-include '.env.php';
-include 'functions.php';
-?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -81,39 +75,16 @@ include 'functions.php';
 
         <!-- Project One -->
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive portrait" src="images/burnie.jpg" alt="">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
                 </a>
-            <div class="caption">
-                <h3><?php echo $name1; ?></h3>
+            </div>
+            <div class="col-md-5">
+                <h3>Project One</h3>
                 <h4>Subheading</h4>
-                <p><?php echo $test1; ?> </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/mattHullum.jpeg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test2; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/geoffRam.jpg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test3; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
             </div>
         </div>
         <!-- /.row -->
@@ -122,39 +93,16 @@ include 'functions.php';
 
         <!-- Project Two -->
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/gusSor.JPG" alt="">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
                 </a>
-            <div class="caption">
-                <h3>Project One</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test4; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-            </div>
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/joelHey.png" alt="">
-                </a>
-            <div class="caption">
+            <div class="col-md-5">
                 <h3>Project Two</h3>
                 <h4>Subheading</h4>
-                <p><?php echo $test5; ?> </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/geoffRam.jpg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test3; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
             </div>
         </div>
         <!-- /.row -->
@@ -271,4 +219,29 @@ include 'functions.php';
 
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+</head>
+
+<body>
+test
+<?php
+include '.env.php';
+
+$sql = "SELECT * FROM roosterteeth;";
+$result = $conn->query($sql);
+
+//output data
+while($row = $result->fetch_assoc()) {
+	echo "id: " . $row["ID"]. " - Name: " . $row["FirstName"]. " " . $row["LastName"]. " - Bio: " . $row["bio"]. " - Nickname: " . $row["Nickname"]. "<br>";
+}
+
+   
+    
+
+?>
+test
+</body>
+</html>
