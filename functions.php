@@ -1,4 +1,5 @@
 <?php
+include '.env.php';
 
 //Burnie Burns
 $sql = "SELECT * FROM roosterteeth WHERE LastName='Burns';";
@@ -19,12 +20,12 @@ while($row = $result->fetch_assoc()) {
 	$test2 = ("id: " . $row["ID"]. " - Name: " . $row["FirstName"]. " " . $row["LastName"]. " - Bio: " . $row["bio"]. " - Nickname: " . $row["Nickname"]. "<br>");
 }
 
-$sql = "SELECT * FROM roosterteeth WHERE FirstName='Geoff';";
+$sql = "SELECT * FROM roosterteeth WHERE LastName='Ramsey' AND FirstName='Geoff';";
 $result = $conn->query($sql);
 
 //output data
 while($row = $result->fetch_assoc()) {
-	$test3 = ("id: " . $row["ID"]. " - Name: " . $row["FirstName"]. " " . $row["LastName"]. " - Bio: " . $row["bio"]. " - Nickname: " . $row["Nickname"]. "<br>");
+	$geoff = ("id: " . $row["ID"]. " - Name: " . $row["FirstName"]. " " . $row["LastName"]. " - Bio: " . $row["bio"]. " - Nickname: " . $row["Nickname"]. "<br>");
 }
 
 $sql = "SELECT * FROM roosterteeth WHERE LastName='Sorola' AND FirstName='Gustavo';";
@@ -43,4 +44,11 @@ while($row = $result->fetch_assoc()) {
 	$test5 = ("id: " . $row["ID"]. " - Name: " . $row["FirstName"]. " " . $row["LastName"]. " - Bio: " . $row["bio"]. " - Nickname: " . $row["Nickname"]. "<br>");
 }
 
+$sql = "SELECT * FROM roosterteeth;";
+$result = $conn->query($sql);
+$rowcount = mysqli_num_rows($result);
+
+echo $rowcount;
+
 ?>
+

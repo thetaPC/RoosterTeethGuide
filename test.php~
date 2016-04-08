@@ -1,0 +1,21 @@
+<?php
+$id = 1;
+
+$sql = "SELECT * FROM roosterteeth;";
+$result = $conn->query($sql);
+$rowcount = mysqli_num_rows($result);
+
+
+$sql = "SELECT * FROM roosterteeth WHERE ID='$id';";
+$result = $conn->query($sql);
+$rowcount = mysqli_num_rows($result);
+while ($id <= $rowcount)
+{
+while($row = $result->fetch_assoc()) {
+	$kerry = ("id: " . $row["ID"]);
+}
+$id++;
+}
+
+
+?>

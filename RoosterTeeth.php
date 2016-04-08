@@ -32,6 +32,7 @@
 
 include '.env.php';
 include 'functions.php';
+include 'test.php';
 ?>
 
     <!-- Navigation -->
@@ -111,48 +112,7 @@ include 'functions.php';
             <div class="caption">
                 <h3>Project Three</h3>
                 <h4>Subheading</h4>
-                <p><?php echo $test3; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/gusSor.JPG" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project One</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test4; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/joelHey.png" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test5; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/geoffRam.jpg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test3; ?> </p>
+                <p><?php echo $geoff; ?> </p>
                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             </div>
