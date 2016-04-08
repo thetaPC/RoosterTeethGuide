@@ -103,7 +103,7 @@ include '.env.php';
 	      while($row = $result->fetch_assoc()) {
     		 $name = ("Name: " . $row["FirstName"]. " " . $row["LastName"]);
     		 $nName = ("Nickname: " . $row["Nickname"]);
-    		 $title = ("Title: " . $row["title"]);
+    		 $title = ($row["title"]);
 		 $img = ($row["img"]);
     	      } //end while
 	?>

@@ -84,12 +84,12 @@ include '.env.php';
 		$maxCol = 3;
 		$times = 2;
 		$limit = 3;
-		$currRow = 1;
+		//$currRow = 1;
 		$startRow = 1;
 		if ($totalID % 3 == 0) {
 		   $rowCount = $totalID / 3;
 		} else {
-		   $rowCount = $startRow + ($totalID / 3);
+		   $rowCount = 1 + ($totalID / 3);
 		}		   
 		$id = 1;
 	   while ($currRow <= $rowCount) {    
