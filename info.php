@@ -67,6 +67,14 @@ include '.env.php';
 
     <!-- Page Content -->
     <div class="container">
+	
+	<!-- Video -->
+	<div class="row" style="background-color:black;">
+	   <div class="col-md-12">
+	      <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/o1ROWLkPHKo?rel=0" frameborder="0" allowfullscreen>
+	      </iframe></center>
+	   </div> <!--end col-->
+	</div> <!--end row-->
 
         <!-- Page Heading -->
         <div class="row">
@@ -101,8 +109,8 @@ include '.env.php';
    	      $sql = "SELECT * FROM roosterteeth WHERE ID='$id';";
     	      $result = $conn->query($sql);
 	      while($row = $result->fetch_assoc()) {
-    		 $name = ("Name: " . $row["FirstName"]. " " . $row["LastName"]);
-    		 $nName = ("Nickname: " . $row["Nickname"]);
+    		 $name = ($row["FirstName"]. " " . $row["LastName"]);
+    		 $nName = ($row["Nickname"]);
     		 $title = ($row["title"]);
 		 $img = ($row["img"]);
     	      } //end while
