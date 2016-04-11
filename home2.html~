@@ -69,7 +69,7 @@
    
   <div id="selection" class="row" style="display:none; padding-top: 50px; padding-bottom: 70px;">
     <div class="col-sm-6">
-      <a href="/info.php"><img src="images/rtRach.jpg" class="img-responsive thumb" style="width:100%" alt="Image"></a>
+      <a href="/RoosterTeeth.php"><img src="images/rtRach.jpg" class="img-responsive thumb" style="width:100%" alt="Image"></a>
       <p>Current Project</p>
     </div> <!--end of 1st grid 150x80-->
     <div class="col-sm-6"> 
