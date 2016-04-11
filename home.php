@@ -69,28 +69,29 @@
    
   <div id="selection" class="row" style="display:none; padding-top: 50px; padding-bottom: 70px;">
     <div class="col-sm-6">
-      <a href="/~mloza1/RoosterTeethGuide/RoosterTeeth.php"><img src="images/rtRach.jpg" class="img-responsive thumb" style="width:100%" alt="Image"></a>
-      <p>Current Project</p>
+      <a href="/~mloza1/RoosterTeethGuide/RoosterTeeth.php"><img src="images/rtRach.jpg" class="img-responsive thumb" alt="Image"></a>
+      <br>
+      <!-- <p>Current Project</p> -->
     </div> <!--end of 1st grid 150x80-->
     <div class="col-sm-6"> 
-      <img src="images/ahRach.jpg" class="img-responsive thumb grayscale" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+      <img src="images/ahRach.jpg" class="img-responsive thumb grayscale" alt="Image">
+      <br>
     </div> <!--end of 2nd grid-->
     <div class="col-sm-6">
-      <img src="images/fhRach.jpg" class="img-responsive thumb grayscale" style="width:100%" alt="Image">
-      <p>Current Project</p>
+      <img src="images/fhRach.jpg" class="img-responsive thumb grayscale" alt="Image">
+      <br>
     </div> <!--end of 3rd grid-->
     <div class="col-sm-6"> 
-      <img src="images/saRach.jpg" class="img-responsive thumb grayscale" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+      <img src="images/saRach.jpg" class="img-responsive thumb grayscale" alt="Image">  
+      <br>
     </div> <!-- end of 4th grid -->
     <div class="col-sm-6"> 
-      <img src="images/kfRach.jpg" class="img-responsive thumb grayscale" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+      <img src="images/kfRach.jpg" class="img-responsive thumb grayscale" alt="Image"> 
+      <br>
     </div> <!-- end of 5th grid -->
     <div class="col-sm-6"> 
-      <img src="images/saRach.jpg" class="img-responsive thumb grayscale" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+      <img src="images/tcRach.jpg" class="img-responsive thumb grayscale" alt="Image"> 
+      <br>
     </div> <!-- end of 6th grid -->
     
    
@@ -104,11 +105,9 @@
       <p >2016 -  <?php echo date("Y"); ?></p>
     </div> <!--end col-->
     <div class="col-md-6">
-      <p style="text-align: right;">Footer Text</p>
+      <p style="text-align: right;">Maria Loza</p>
     </div> <!--end col-->
   </div> <!--end row-->
-  
-</footer>
 
 
 </body>

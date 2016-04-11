@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>1 Col Portfolio - Start Bootstrap Template</title>
+    <title>RT Staff</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,10 +31,9 @@
 <?php
 
 include '.env.php';
-include 'functions.php';
-include 'test.php';
 ?>
 
+    <div class="container-fluid">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -46,19 +45,28 @@ include 'test.php';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="/~mloza1/RoosterTeethGuide/home.php">Rooster Teeth Guide</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="/~mloza1/RoosterTeethGuide/RoosterTeeth.php">Rooster Teeth</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">Achievement Hunter</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Funhaus</a>
+                    </li>
+                    <li>
+                        <a href="#">ScrewAttack</a>
+                    </li>
+                    <li>
+                        <a href="#">Kinda Funny</a>
+                    </li>
+                    <li>
+                        <a href="#">The Creatures</a>
                     </li>
                 </ul>
             </div>
@@ -67,146 +75,86 @@ include 'test.php';
         <!-- /.container -->
     </nav>
 
+    	<!-- Video -->
+    
+	<div class="row" style="background-color:black;">
+	   <div class="col-md-12">
+	      <center><iframe width="800" height="550" src="https://www.youtube-nocookie.com/embed/o1ROWLkPHKo?rel=0" frameborder="0" allowfullscreen>
+	      </iframe></center>
+	   </div> <!--end col-->
+	</div> <!--end row-->
+	</div>
+
     <!-- Page Content -->
     <div class="container">
 
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Page Heading
-                    <small>Secondary Text</small>
+                <h1 class="page-header">Rooster Teeth Staff
+                    <!-- <small>Secondary Text</small> -->
                 </h1>
             </div>
         </div>
-        <!-- /.row -->
 
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/burnie.jpg" alt="">
-                </a>
-            <div class="caption">
-                <h3><?php echo $name1; ?></h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test1; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/mattHullum.jpeg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $test2; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-		
-		<div class="col-md-4">
-                <a href="#">
-                    <img class="img-responsive portrait" src="images/rtStaff/geoffRam.jpg" alt="">
-                </a>
-            <div class="caption">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p><?php echo $geoff; ?> </p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Four</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Five</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
+        <?php 
+	   $sql = "SELECT * FROM roosterteeth;";
+	   $result = $conn->query($sql);
+	   $totalID = mysqli_num_rows($result);
+		$maxCol = 3;
+		$times = 2;
+		$limit = 3;
+		//$currRow = 1;
+		$startRow = 1;
+		if ($totalID % 3 == 0) {
+		   $rowCount = $totalID / 3;
+		} else {
+		   $rowCount = 1 + ($totalID / 3);
+		}		   
+		$id = 1;
+	   while ($currRow <= $rowCount) {    
+	?>
+	<!-- Project One -->
+	<div class="row">
+	<?php
+	   while ($id <= $limit) {
+   	      $sql = "SELECT * FROM roosterteeth WHERE ID='$id';";
+    	      $result = $conn->query($sql);
+	      while($row = $result->fetch_assoc()) {
+    		 $name = ($row["FirstName"]. " " . $row["LastName"]);
+    		 $nName = ($row["Nickname"]);
+    		 $title = ($row["title"]);
+		 $img = ($row["img"]);
+    	      } //end while
+	?>
+	<div class="col-md-4">
+        <a href="#">
+            <img class="img-responsive portrait" src="images/rtStaff/<?php echo $img; ?>" alt="">
+        </a>
+	    <div class="caption">
+		<h3><?php echo $name; ?></h3>
+		<h4><?php echo $nName; ?></h4>
+		<p><?php echo $title; ?></p>
+		<!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+	    </div> <!--caption-->
+       </div> <!--col-->
+       <?php
+	     $id++;
+	     if ($id > $totalID) {
+	        $id = $id + $limit;
+	     }
+	     
+	  } //end inner loop
+	  $limit = $maxCol * $times;
+	  $times++;
+       ?>
+       </div> <!--row-->
+       <!-- /.row -->
+       <hr>
+       <?php
+	     $currRow++;
+	  } //end outer loop
+       ?>
 
         <!-- Footer -->
         <footer>
