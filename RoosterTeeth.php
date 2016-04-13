@@ -2,29 +2,9 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>RT Staff</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <?php include 'header.html'; ?>
+    <link rel="stylesheet" href="css/rtStaff.css">
 </head>
 
 <body>
@@ -79,8 +59,11 @@ include '.env.php';
     
 	<div class="row" style="background-color:black;">
 	   <div class="col-md-12">
-	      <center><iframe width="800" height="550" src="https://www.youtube-nocookie.com/embed/o1ROWLkPHKo?rel=0" frameborder="0" allowfullscreen>
-	      </iframe></center>
+	       <div class="container">
+	      <div class="embed-responsive embed-responsive-16by9">
+	          <iframe class="embed-responsive-item" width="800" height="550" src="https://www.youtube-nocookie.com/embed/o1ROWLkPHKo?rel=0" frameborder="0" allowfullscreen></iframe>
+	      </div>
+	      </div>
 	   </div> <!--end col-->
 	</div> <!--end row-->
 	</div>
@@ -90,8 +73,9 @@ include '.env.php';
 
         <!-- Page Heading -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Rooster Teeth Staff
+            <div class="col-sm-12 col-md-12">
+                <img src="images/logoTran.png" alt="RT banner" class="under">
+                <h1 class="page-header">Rooster Teeth Members
                     <!-- <small>Secondary Text</small> -->
                 </h1>
             </div>
@@ -127,16 +111,18 @@ include '.env.php';
 		 $img = ($row["img"]);
     	      } //end while
 	?>
-	<div class="col-md-4">
-        <a href="#">
+	<div class="col-xm-4 col-sm-4 col-md-4">
+	    <center>
+        <!-- <a href="#"> -->
             <img class="img-responsive portrait" src="images/rtStaff/<?php echo $img; ?>" alt="">
-        </a>
+        <!-- </a> -->
 	    <div class="caption">
 		<h3><?php echo $name; ?></h3>
 		<h4><?php echo $nName; ?></h4>
 		<p><?php echo $title; ?></p>
 		<!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
 	    </div> <!--caption-->
+	    </center>
        </div> <!--col-->
        <?php
 	     $id++;
@@ -150,30 +136,62 @@ include '.env.php';
        ?>
        </div> <!--row-->
        <!-- /.row -->
-       <hr>
-       <?php
+       <?php 
+       if ($currRow < $rowCount) {
+           ?>
+           <hr>
+           <?php 
+       } 
+       /*?php 
+       if ($currRow < $rowCount) {
+           ?>
+           <hr>
+           <?php 
+       } else {
+           $currRow = $currRow + $rowCount;
+       } */
 	     $currRow++;
 	  } //end outer loop
        ?>
+       
+    <a class="back-to-top" style="display: inline;" href="#"><i class="fa fa-chevron-up"></i></a>
+
+     <?php include 'footer.php' ?>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
+        <!--<footer>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-lg-12">-->
+        <!--            <p>Copyright &copy; Your Website 2014</p>-->
+        <!--        </div>-->
+        <!--    </div>-->
             <!-- /.row -->
-        </footer>
+        <!--</footer>-->
 
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+ 
+    jQuery(document).ready(function() {
+        var offset = 250;
+        var duration = 300;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery(‘.back-to-top’).fadeIn(duration);
+            } else {
+                jQuery(‘.back-to-top’).fadeOut(duration);
+            }
+        });
+        &nbsp;
+        jQuery(‘.back-to-top’).click(function(event) {
+            event.preventDefault();
+            jQuery(‘html, body’).animate({scrollTop: 0}, duration);
+            return false;
+        })
+    });
+ 
+    </script>
 
 </body>
 

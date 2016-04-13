@@ -8,6 +8,9 @@ body {
     padding-top: 51px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-footer {
-    margin: 50px 0;
+/* Firefox only */
+@media (min--moz-device-pixel-ratio:0) and (min-width: 992px) {
+  body {
+    padding-top: 45px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  }
 }

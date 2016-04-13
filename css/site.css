@@ -1,15 +1,17 @@
+body {
+  background: #F7F7F7;
+  /* padding-top: 51px; */
+}
+
+
+
 .thumb {
   width: 100%;
   height: 280px;
 }
 
-.carPic {
-  height: 400px;
-  width: 100%;
-}
-
 .portrait {
-height: 250px;
+  height: 250px;
 }
 
 .grayscale {
@@ -17,6 +19,116 @@ height: 250px;
   filter: grayscale(100%);
 }
 
+/* Disable grayscale on hover */
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
 .navbar-inverse {
   background-color: #333333;
 }
+
+.fixedHt {
+  min-height: calc(100vh - 30px);
+}
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+#footer {
+  font-size: 10px;
+}
+
+.under {
+  left: 0px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  height: 110px;
+  float: left;
+}
+
+.page-header {
+  margin-left: 20px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide
+@media (max-width: 600px) {
+.carousel-caption {
+display: none;
+}
+} */
+  
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  color: blue;
+}
+ 
+.back-to-top i {
+  font-size: 30px;
+  color: #9e1d22;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #b366ff;
+}
+
+#footer p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+
+hr, .page-header {
+  border-bottom: 3px solid #9e1d22;
+}
+
+.hidden {
+    display: none;
+}
+
+/* fixed height for RT logo */
+@media (min-width: 533px) and (max-width: 767px) {
+  .under {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 372px) {
+  .under {
+    width: 100px;
+  }
+}
+
+/* Ipad  */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  }
+}
+
+/* Google Chrome only  */
+@media (-webkit-min-device-pixel-ratio:0) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
